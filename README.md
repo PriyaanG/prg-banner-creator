@@ -1,8 +1,8 @@
-# Vite & HeroUI Template
+# PRG Banner Creater
 
-This is a template for creating applications using Vite and HeroUI (v2).
+This is a banner creater designed by Priyaanplayz that has been developed for hosts at PRG (PTFS Roleplay Group) to have easy banner creation methods without using 3rd party software. This banner creater helps simplify the banner creation process at PTFS Roleplay Group.
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/vite-template)
+[Use the website!](https://prg-banner-creater.vercel.app)
 
 ## Technologies Used
 
@@ -13,37 +13,7 @@ This is a template for creating applications using Vite and HeroUI (v2).
 - [TypeScript](https://www.typescriptlang.org)
 - [Framer Motion](https://www.framer.com/motion)
 
-## How to Use
-
-To clone the project, run the following command:
-
-```bash
-git clone https://github.com/heroui-inc/vite-template.git
 ```
-
-### Install dependencies
-
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
-
-```bash
-npm install
-```
-
-### Run the development server
-
-```bash
-npm run dev
-```
-
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
-
-```bash
-public-hoist-pattern[]=*@heroui/*
-```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
 
 ## License
 
