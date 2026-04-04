@@ -1,5 +1,5 @@
-import { title } from "/src/components/primitives";
-import DefaultLayout from "/src/layouts/default";
+import { title } from "../components/primitives";
+import DefaultLayout from "../layouts/default";
 import {Button} from "@heroui/button";
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, DropdownSection} from "@heroui/dropdown"
 import React from "react"
