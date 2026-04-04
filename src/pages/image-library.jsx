@@ -133,7 +133,7 @@ const airlineValue = selectedAirline.size > 0 ? Array.from(selectedAirline)[0] :
          <Dropdown>
   <DropdownTrigger>
   <Button startContent=
-  <img src="/public/airport_10903216.png" width="25px" height="25px"></img> variant="bordered" className="mr-5 bg-gradient-to-b from-[#00b7fa] to-[#01cfea] ...">{selectedValue}</Button>
+  <img src="/airport_10903216.png" width="25px" height="25px"></img> variant="bordered" className="mr-5 bg-gradient-to-b from-[#00b7fa] to-[#01cfea] ...">{selectedValue}</Button>
   </DropdownTrigger>
 
   <DropdownMenu className="max-h-64 overflow-y-auto"
@@ -202,7 +202,7 @@ const airlineValue = selectedAirline.size > 0 ? Array.from(selectedAirline)[0] :
 </Dropdown>
 <Dropdown>
   <DropdownTrigger>
-    <Button variant="solid" startContent=<img src="/public/flight_9716740.png" width="25px" height="25px"></img> className="mr-5 bg-gradient-to-b from-[#00b7fa] to-[#01cfea] ...">{selectedPlaneValue}</Button>
+    <Button variant="solid" startContent=<img src="/flight_9716740.png" width="25px" height="25px"></img> className="mr-5 bg-gradient-to-b from-[#00b7fa] to-[#01cfea] ...">{selectedPlaneValue}</Button>
   </DropdownTrigger>
 
   <DropdownMenu
