@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import IndexPage from "@/pages/index";
-import DocsPage from "/src/pages/image-library.jsx";
+import DocsPage from "@/pages/image-library";
 import PricingPage from "@/pages/pricing";
 import BlogPage from "@/pages/changelog";
 import AboutPage from "@/pages/about";

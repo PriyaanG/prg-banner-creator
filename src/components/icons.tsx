@@ -2,20 +2,6 @@ import * as React from "react";
 
 import { IconSvgProps } from "@/types";
 
-export const Logo: React.FC<IconSvgProps> = ({
-  size = 75,
-  height,
-  ...props
-}) => (
-  <img
-    src="/PRG_Logo-removebg-preview.png"
-    width={size || height}
-    height={size || height}
-    alt="Logo"
-    {...props}
-  />
-);
-
 export const DiscordIcon: React.FC<IconSvgProps> = ({
   size = 24,
   width,
