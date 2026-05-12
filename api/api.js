@@ -1,6 +1,6 @@
 export async function GET(request) {
 try {
-    const resp = await fetch('https://tico09.com/photos/api/search?q="A320', {
+    const resp = await fetch('https://tico09.com/photos/api/A320/DLH', {
       method: 'GET',
       headers: { 'Accept': 'application/json' },
     });
