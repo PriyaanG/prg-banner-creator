@@ -97,7 +97,7 @@ const airlineValue = selectedAirline.size > 0 ? Array.from(selectedAirline)[0] :
           <img className="justify-center ml-auto mr-auto w-50 h-25" src={image.filepath} />
           <h2 className="justify-center text-center">{image.name}</h2>
           <a href={image.filepath} download={image.name}>
-          <Button className="mt-2 w-full bg-gradient-to-b from-[#FF1CF7] to-[#b249f8]"  startContent=<img className="mr-auto" width="25px" height="25px" src="/public/downloadicon.png"/>><p className=" text-center mr-auto">Download</p></Button>
+          <Button className="mt-2 w-full bg-gradient-to-b from-[#FF1CF7] to-[#b249f8]"  startContent=<img className="mr-auto" width="25px" height="25px" src="/downloadicon.png"/>><p className=" text-center mr-auto">Download</p></Button>
         </a>
         </div>)
 
@@ -128,7 +128,7 @@ const airlineValue = selectedAirline.size > 0 ? Array.from(selectedAirline)[0] :
           <h1 className={title()}>Image Library</h1>
         </div>
       </section>
-      <div>
+      <div >
       <h3>Filters</h3>
          <Dropdown>
   <DropdownTrigger>
@@ -333,7 +333,7 @@ const airlineValue = selectedAirline.size > 0 ? Array.from(selectedAirline)[0] :
 </Dropdown>
 <Dropdown>
       <DropdownTrigger>
-        <Button variant="solid" startContent=<img src="/public/flight_9716740.png" width="25px" height="25px"></img> className="bg-gradient-to-b from-[#00b7fa] to-[#01cfea] ...">{selectedAirline}</Button>
+        <Button variant="solid" startContent=<img src="/flight_9716740.png" width="25px" height="25px"></img> className="bg-gradient-to-b from-[#00b7fa] to-[#01cfea] ...">{selectedAirline}</Button>
       </DropdownTrigger>
 
       <DropdownMenu
