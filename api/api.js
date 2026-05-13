@@ -1,6 +1,6 @@
 export async function GET(request) {
     const base = `https://prg-banner-creator.vercel.app/image-library`; // base required to construct URL
-  const url = new URL(req.url, base);
+  const url = new URL(request.url, base);
   const params = url.searchParams;
 
   // Read a single param
