@@ -110,6 +110,16 @@ const airlineValue = selectedAirline.size > 0 ? Array.from(selectedAirline)[0] :
     [selectedKeys],    
   );
 
+  function retrieve24SPYImages(plane, airline){
+  fetch(`https://prg-banner-creator.vercel.app/api/api.js?plane=${selectedPlane}&&airline=${selectedAirline}`)
+  .then(response => response.json())
+  .then(data => () => {
+    console.log(data);
+
+  })
+  .catch(error => console.error('Error:', error));
+  }
+
 
    function NoFilterApplied(keys, func){
       const value = Array.from(keys)[0];
