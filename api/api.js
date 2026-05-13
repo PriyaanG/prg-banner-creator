@@ -5,14 +5,15 @@ export async function GET(request) {
 
   // Read a single param
   const plane = params.get('plane'); // returns string or null
-  const airline = params.goet('airline')
+  const airline = params.get('airline')
     const resp = await fetch(`https://tico09.com/photos/api/${plane}/${airline}`, {
       method: 'GET',
       headers: { 'Accept': 'application/json' },
     });
-    if (!resp.ok){ console.log(res.status(resp.status).json({ error: await resp.text() })); }
-    else {
-    const data = await resp.json();
-    return res.status(200).json(data);
-    }
   }
+  const data = await resp.json();
+  return new Response(JSON.stringify(data), {
+    status: 200,
+    headers: { 'Content-Type': 'application/json' },
+  });
+}
