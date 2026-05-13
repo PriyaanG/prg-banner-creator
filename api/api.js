@@ -10,10 +10,11 @@ export async function GET(request) {
       method: 'GET',
       headers: { 'Accept': 'application/json' },
     });
-  }
-  const data = await resp.json();
+    const data = await resp.json();
   return new Response(JSON.stringify(data), {
     status: 200,
     headers: { 'Content-Type': 'application/json' },
   });
-}
+  }
+
+
