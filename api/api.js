@@ -7,7 +7,7 @@ export async function GET(request) {
   const plane = params.get('plane'); // returns string or null
   const airline = params.get('airline')
 
-  if (airline == "No Airport Filter Applied"){
+  if (airline == ""){
     const resp = await fetch(`https://tico09.com/photos/api/search?q=${plane}`, {
       method: 'GET',
       headers: { 'Accept': 'application/json' },
@@ -17,7 +17,7 @@ export async function GET(request) {
     status: 200,
     headers: { 'Content-Type': 'application/json' },
   });
-  } else if (plane == "No Plane Filter Applied"){
+  } else if (plane == ""){
     const resp = await fetch(`https://tico09.com/photos/api/search?q=${airline}`, {
       method: 'GET',
       headers: { 'Accept': 'application/json' },
