@@ -29,6 +29,7 @@ export async function GET(request) {
       method: 'GET',
       headers: { 'Accept': 'application/json' },
     });
+    console.log(`https://tico09.com/photos/api/${plane}/${airline}`)
     const data = await resp.json();
  response = data;
   }
