@@ -32,7 +32,10 @@ export async function GET(request) {
     console.log(`https://tico09.com/photos/api/${plane}/${airline}`)
     const data = await resp.json();
  response = data;
-  return new Response(JSON.stringify(data), {
+ response.photos.forEach(element => {
+  responseList.push({URL: element.url, Author: element.author})
+ })
+  return new Response(JSON.stringify(responseList), {
     status: 200,
     headers: { 'Content-Type': 'application/json' },
   });
