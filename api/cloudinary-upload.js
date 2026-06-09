@@ -1,6 +1,6 @@
 export async function GET(request) {
 // Require the cloudinary library
-const cloudinary = require('cloudinary').v2;
+import { v2 as cloudinary } from 'cloudinary';
 const params = url.searchParams;
 const airlineVar = params.get('airline')
 const planeVar = params.get('plane')
