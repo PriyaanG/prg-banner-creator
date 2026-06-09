@@ -50,5 +50,8 @@ const uploadImage = async (imagePath) => {
 
 (async () => {
     const publicId = await uploadImage(imagePath);
-})
-}
+    return new Response(JSON.stringify(publicId), {
+         status: 200,
+         headers: { 'Content-Type': 'application/json' },
+    }
+  )})}
