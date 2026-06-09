@@ -2,6 +2,7 @@ import { v2 as cloudinary } from 'cloudinary';
 
 export async function GET(request) {
 // Require the cloudinary library
+  const url = new URL(request.url);
 const params = url.searchParams;
 const airlineVar = params.get('airline')
 const planeVar = params.get('plane')
