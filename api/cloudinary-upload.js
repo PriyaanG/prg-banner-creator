@@ -47,4 +47,8 @@ const uploadImage = async (imagePath) => {
   });
     }
 };
+
+(async () => {
+    const publicId = await uploadImage(imagePath);
+})
 }
