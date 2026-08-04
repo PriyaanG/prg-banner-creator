@@ -9,8 +9,9 @@ export async function GET(request) {
   const imagePath = params.get('imagepath');
 
   try {
-    const result = await cloudinary.uploader.upload("KLM.png", {
+    const result = await cloudinary.uploader.upload(imagePath, {
       resource_type: "image",
+      metadata: `airline=${airlineVar}|plane=${planeVar}`,
     });
 
     return new Response(JSON.stringify("Success"), {
