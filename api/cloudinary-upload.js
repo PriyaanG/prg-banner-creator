@@ -7,11 +7,13 @@ export async function GET(request) {
   const airlineVar = params.get('airline');
   const planeVar = params.get('plane');
   const imagePath = params.get('imagepath');
+  const airportVar = params.get('airportvar')
 
   try {
     const result = await cloudinary.uploader.upload(imagePath, {
       resource_type: "image",
-      metadata: `airline=${airlineVar}|plane=${planeVar}`,
+      metadata: `airline=${airlineVar}|plane=${planeVar}|airport=${airportVar}`,
+      public_id: `${planeVar}${airlineVar}_{airportVar}`
     });
 
     return new Response(JSON.stringify("Success"), {
