@@ -44,10 +44,7 @@ export async function GET(request) {
   responseList.push({URL: element.url, Author: element.author})
   });
   console.log(responseList)
-    return new Response(JSON.stringify(responseList), {
-    status: 200,
-    headers: { 'Content-Type': 'application/json' },
-  });
+    
 }
 
 
