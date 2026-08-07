@@ -37,8 +37,8 @@ const airlines = [
                                                 "JetBlue",
                                                   "KLM",
                                                     "Korean Air",
-                                                      "Korean Air Cargo",
-                                                        "LOT",
+"Korean Air Cargo",
+"LOT",
                                                           "Lufthansa",
                                                             "Pan Am",
                                                               "Qantas",
@@ -80,6 +80,9 @@ export default function DocsPage() {
   const [selectedPlane, setSelectedPlane] = React.useState(new Set(["Plane Filter"]));
   const [selectedAirline, setSelectedAirline] = React.useState(new Set(["Select Airline"]));
 
+// Get Images
+
+
 // Map for Images
 const filteredImages = images.filter((img) => {
   const airportValue = selectedKeys.size > 0 ? Array.from(selectedKeys)[0] : null;
@@ -116,11 +119,10 @@ const airlineValue = selectedAirline.size > 0 ? Array.from(selectedAirline)[0] :
   .then(data => () => {
     console.log(data);
     data = data.JSON()
-    data.forEach(element => {
-      
-    })
+    return(data);
   })
   .catch(error => console.error('Error:', error));
+  return(`Error: ${error}`)
   }
 
 
